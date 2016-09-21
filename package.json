@@ -1,7 +1,7 @@
 {
-	"author": "Ygor Lazaro <ygor@gatoninja.com.br>",
+	"author": "Your Name <ygor@gatoninja.com.br> (http://www.gatoninja.com.br)",
 	"name": "gn-dropdown-multiselect",
-	"version": "1.6",
+	"version": "1.6.1",
 	"description": "This directive gives you a Bootstrap Dropdown with the power of AngularJS directives.",
 	"dependencies": {
 		"angular": "~1.5.8"

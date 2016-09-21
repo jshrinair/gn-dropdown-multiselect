@@ -15,8 +15,8 @@ This directive gives you a Bootstrap Dropdown with the power of AngularJS direct
 - Translation texts.
 - Scrollable list (useful for big lists)
 
-## Demo
-http://myforce.github.io/angularjs-dropdown-multiselect/
+## Site
+https://gatoninja.github.io/gn-dropdown-multiselect
 
 ## Dependencies
 - required: AngularJS >= 1.5, Bootstrap >= 3.0
@@ -26,17 +26,15 @@ http://myforce.github.io/angularjs-dropdown-multiselect/
 
 ## Install
 1. Download the files
-	1. Using bower: <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
+	1. Using bower:
 
-		Just run `bower install myforce-angularjs-dropdown-multiselect`
+		Just run `bower install gn-dropdown-multiselect`
+	2. Using npm:
+
+		Just run `npm install gn-dropdown-multiselect`
 	2. Manually:
 		You can download the `.js` file directly or clone this repository
 2. Include the file in your app
-	- `<script type="text/javascript" src="angularjs-dropdown-multiselect.js"></script>`.
-	- You can also use the minfined version (`angularjs-dropdown-multiselect.min.js`).
-3. Include the module in angular (i.e. in `app.js`) - `angularjs-dropdown-multiselect`
-
-
-## Usage and Documentation
-See the documentation and examples in the GitHub pages:
-http://myforce.github.io/angularjs-dropdown-multiselect/
+	- `<script src="gn-dropdown-multiselect.js"></script>`.
+	- You can also use the minfined version (`gn-dropdown-multiselect.min.js`).
+3. Include the module in angular (i.e. in `app.js`) - `gn-dropdown-multiselect`
