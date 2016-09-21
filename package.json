@@ -1,11 +1,10 @@
 {
-	"author": "pkempenaers@myforce.be",
-	"name": "angularjs-dropdown-multiselect",
-	"version": "0.0.0",
+	"author": "Ygor Lazaro <ygor@gatoninja.com.br>",
+	"name": "gn-dropdown-multiselect",
+	"version": "1.6",
 	"description": "This directive gives you a Bootstrap Dropdown with the power of AngularJS directives.",
-	"homepage": "http://myforce.github.io/angularjs-dropdown-multiselect/#/",
 	"dependencies": {
-		"angular": "~1"
+		"angular": "~1.5.8"
 	},
 	"devDependencies": {
 		"express": "~3.4.4",
@@ -23,7 +22,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/myforce/angularjs-dropdown-multiselect.git"
+		"url": "git+https://github.com/gatoninja/angularjs-dropdown-multiselect.git"
 	},
 	"engines": {
 		"node": "0.10.10"
@@ -35,6 +34,6 @@
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/myforce/angularjs-dropdown-multiselect/issues"
+		"url": "https://github.com/gatoninja/angularjs-dropdown-multiselect/issues"
 	}
 }
