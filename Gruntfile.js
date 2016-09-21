@@ -1,3 +1,4 @@
+/* global module */
 /**
 @toc
 2. load grunt plugins
@@ -8,27 +9,27 @@
 
 */
 
-'use strict';
+"use strict";
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
 	/**
 	Load grunt plugins
 	@toc 2.
 	*/
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-build-control');
+	grunt.loadNpmTasks("grunt-contrib-concat");
+	grunt.loadNpmTasks("grunt-contrib-less");
+	grunt.loadNpmTasks("grunt-contrib-uglify");
+	grunt.loadNpmTasks("grunt-contrib-cssmin");
+	grunt.loadNpmTasks("grunt-contrib-jshint");
+	grunt.loadNpmTasks("grunt-build-control");
 
 	/**
 	Function that wraps everything to allow dynamically setting/changing grunt options and config later by grunt task. This init function is called once immediately (for using the default grunt options, config, and setup) and then may be called again AFTER updating grunt (command line) options.
 	@toc 3.
 	@method init
 	*/
-	function init(params) {
+	function init() {
 		/**
 		Project configuration.
 		@toc 5.
@@ -36,60 +37,60 @@ module.exports = function(grunt) {
 		grunt.initConfig({
 			concat: {
 				devCss: {
-					src:    [],
-					dest:   []
+					src: [],
+					dest: []
 				}
 			},
 			buildcontrol: {
 				options: {
-					dir: 'pages',
+					dir: "pages",
 					commit: true,
 					push: true,
-					message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+					message: "Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%"
 				},
 				pages: {
 					options: {
-						remote: 'git@github.com:dotansimha/angularjs-dropdown-multiselect.git',
-						branch: 'gh-pages'
+						remote: "git@github.com:dotansimha/gn-dropdown-multiselect.git",
+						branch: "gh-pages"
 					}
 				}
 			},
 			jshint: {
 				options: {
 					//force:          true,
-					globalstrict:   true,
+					globalstrict: true,
 					//sub:            true,
 					node: true,
 					loopfunc: true,
-					browser:        true,
-					devel:          true,
+					browser: true,
+					devel: true,
 					globals: {
-						angular:    false,
-						$:          false,
-						moment:		false,
+						angular: false,
+						$: false,
+						moment: false,
 						Pikaday: false,
 						module: false,
 						forge: false,
 						"_": false
 					}
 				},
-				beforeconcat:   {
+				beforeconcat: {
 					options: {
-						force:	false,
-						ignores: ['**.min.js']
+						force: false,
+						ignores: ["**.min.js"]
 					},
 					files: {
 						src: []
 					}
 				},
 				//quick version - will not fail entire grunt process if there are lint errors
-				beforeconcatQ:   {
+				beforeconcatQ: {
 					options: {
-						force:	true,
-						ignores: ['**.min.js']
+						force: true,
+						ignores: ["**.min.js"]
 					},
 					files: {
-						src: ['**.js']
+						src: ["**.js"]
 					}
 				}
 			},
@@ -98,9 +99,9 @@ module.exports = function(grunt) {
 					mangle: false
 				},
 				build: {
-					files:  {},
-					src:    'src/angularjs-dropdown-multiselect.js',
-					dest:   'dist/angularjs-dropdown-multiselect.min.js'
+					files: {},
+					src: "src/gn-dropdown-multiselect.js",
+					dest: "dist/gn-dropdown-multiselect.min.js"
 				}
 			}
 		});
@@ -112,7 +113,7 @@ module.exports = function(grunt) {
 		*/
 		// Default task(s).
 		// grunt.registerTask('default', ['jshint:beforeconcat', 'less:development', 'concat:devJs', 'concat:devCss']);
-		grunt.registerTask('default', ['jshint:beforeconcatQ', 'uglify:build']);
+		grunt.registerTask("default", ["jshint:beforeconcatQ", "uglify:build"]);
 
 	}
 	init({});		//initialize here for defaults (init may be called again later within a task)

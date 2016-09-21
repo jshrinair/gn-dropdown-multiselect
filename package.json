@@ -1,7 +1,7 @@
 {
 	"author": "Your Name <ygor@gatoninja.com.br> (http://www.gatoninja.com.br)",
 	"name": "gn-dropdown-multiselect",
-	"version": "1.6.1",
+	"version": "1.6.2",
 	"description": "This directive gives you a Bootstrap Dropdown with the power of AngularJS directives.",
 	"dependencies": {
 		"angular": "~1.5.8"
@@ -15,25 +15,27 @@
 		"grunt-contrib-jshint": "~0.7.0",
 		"grunt-contrib-less": "~0.8.1",
 		"grunt-contrib-uglify": "~0.2.5",
-		"grunt-karma": "~0.6.2"
+		"browser-sync": "2.16.0"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/gatoninja/angularjs-dropdown-multiselect.git"
+		"url": "git+https://github.com/gatoninja/gn-dropdown-multiselect.git"
 	},
 	"engines": {
 		"node": "0.10.10"
 	},
-	"main": "src/angularjs-dropdown-multiselect.js",
+	"main": "src/gn-dropdown-multiselect.js",
 	"keywords": [
 		"angular",
-		"multiselect"
+		"multiselect",
+		"gatoninja",
+		"gato ninja"
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/gatoninja/angularjs-dropdown-multiselect/issues"
+		"url": "https://github.com/gatoninja/gn-dropdown-multiselect/issues"
 	}
 }

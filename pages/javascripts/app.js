@@ -1,25 +1,25 @@
-'use strict';
+"use strict";
 
-angular.module('exampleApp', [
-    'ngRoute',
-    'angularjs-dropdown-multiselect',
-    'hljs',
-	'ui.bootstrap'
+angular.module("exampleApp", [
+    "ngRoute",
+    "gn-dropdown-multiselect",
+    "hljs",
+	"ui.bootstrap"
 ]).
-config(['$routeProvider', '$locationProvider', '$compileProvider',
+config(["$routeProvider", "$locationProvider", "$compileProvider",
     function($routeProvider, $locationProvider) {
         $locationProvider.html5Mode(false);
 
 
-        var appPathRoute = '/';
-        var pagesPath = staticPath + 'javascripts/pages/';
+        var appPathRoute = "/";
+        var pagesPath = staticPath + "javascripts/pages/";
 
 
-        $routeProvider.when('/', {
-            templateUrl: pagesPath + 'home/home.html'
+        $routeProvider.when("/", {
+            templateUrl: pagesPath + "home/home.html"
         });
 
-        $routeProvider.otherwise('/');
+        $routeProvider.otherwise("/");
 
     }
 ]);
