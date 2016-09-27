@@ -15,9 +15,6 @@ This directive gives you a Bootstrap Dropdown with the power of AngularJS direct
 - Translation texts.
 - Scrollable list (useful for big lists)
 
-## Site
-https://gatoninja.github.io/gn-dropdown-multiselect
-
 ## Dependencies
 - required: AngularJS >= 1.5, Bootstrap >= 3.0
 
